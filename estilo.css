@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    font-family: arial;
+    background: #F9F9F9;
+}
+
+.container{
+    padding: 3.5%;
+}
+
+.menu{
+    background: #050303;
+    padding: 10px;
+    text-align: right;
+}
+
+.menu button{
+    padding: 5px 20px;
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.botaoAcessar{
+    background: transparent;
+    border: 1px solid #FFF;
+}
+.botaoCriarConta{
+    background: #454545;
+    border: 1px solid #000;
+}
+
+/* ------ CABEÇALHO ------ */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Tapestry&display=swap');
+.cabecalho{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+.cabecalho h1{
+    margin: 0;
+    padding: 0;
+}
+
+/* ------ POSTAGENS E POSTS ------ */
+.postagens{
+    display: flex;
+    justify-content: space-around;
+}
+
+.post{
+    margin: 10px;
+    padding: 10px;
+}
+.post img{
+    max-width: 100%;
+}
+.post{
+    text-align: center;
+    border: 1px solid #CCC;
+    background: #FFF;
+    color: rgb(77, 69, 63);
+}
+.post h2{
+    margin: 0;
+}
+
+.post button{
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(243, 207, 0);
+    color: #FFF;
+}
+
+#listaNoticias ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#listaNoticias li{
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 10px;
+}
+
+/* ------ MODAL E FUNDO PRETO ------ */
+#modal{
+    
+    position: fixed; 
+
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+    margin: auto;
+
+    /* Daqui para baixo é o CSS normal */
+    z-index: 100;
+    width: 300px;
+    background: #FFF;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    display: none;
+}
+
+#modal div{
+    display: flex;
+    justify-content: space-between;
+}
+#modal input{
+    width: 270px;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 1.05em;
+}
+#modal button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #FFF;
+    cursor: pointer;
+}
+.noticias{
+    text-align: center;
+}
+
+.botaoSair{
+    background: rgb(204, 2, 36);
+}
+.botaoSalvar{
+    background: rgb(93, 179, 36);
+}
+
+#fundoPreto{
+    display: none;
+    background: rgb(48, 3, 3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    opacity: 0.4;
+}
+
+/* ------ RODAPÉ ------ */
+.rodape{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    background: #000000;
+    color: #FFF;
+    padding: 30px;
+}

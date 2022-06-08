@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Audio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOFOQUITO</title>
+
+    <link rel="stylesheet" href="icones/css/all.css"/>
+    <link rel="stylesheet" href="estilo.css" />
+
+</head>
+<body>
+
+    <div class="menu">
+        <button onclick="mostraPostarNoticia();" class="botaoAcessar"> Poste uma notícia </button>
+    </div>
+
+
+    <div class="container">
+
+        <div class="cabecalho">
+            <h1> Ronão Blog </h1>
+            <p> Saiba exatamente tudo sobre tecnologia </p>
+        </div>
+
+        <hr/>
+
+        <div class="postagens">
+            
+            <div class="post">
+                <img  width="225" height="250" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"/>
+                <h2> HTML </h2>
+                <strong>
+                HTML é onde os usuários podem criar e estruturar seções, parágrafos e links usando elementos, tags e atributos.
+                </strong>
+                <br>
+                <br>
+
+                <button> Saiba mais </button>
+            </div>
+            
+            <div class="post">
+                <img height="250" src="https://www.alura.com.br/artigos/assets/html-css-js/imagem-2.png" width="300"/>
+                <h2> CSS </h2>
+                <strong>
+                    Após montar o HTML, o CSS deixa a estrutura fornecida pelo html mais elegante. 
+                </strong>
+                <br>
+                <br>
+
+                <button> Saiba mais </button>
+            </div>
+            
+            <div class="post">
+                <img height="250" src="http://portalwebdesigner.com/wp-content/uploads/2016/05/Simbolo-Linguagem-JavaScript.png" width="300" />
+                <h2> JavaScript </h2>
+                <strong>
+                    JavaScript dá funcionalidades para o site, resumisse nas funções que um site tem
+                </strong>
+                <br>
+                <br>
+                <button> Saiba mais </button>
+            </div>
+
+        </div>
+
+        <hr/>
+
+        <div class="noticias">
+            <h2> <i class="fa-solid fa-bolt"></i> Notícias Rápidas <i class="fa-solid fa-bolt"></i> </h2> 
+            <hr>
+            <p> Essas são as notícias rápidas escritas pelos nossos leitores. </p>
+
+            <div id="listaNoticias"> </div>
+
+        </div>
+
+    </div>
+
+    <div id="modal">
+        <h2>Postar notícias</h2>
+        <input id="inputNome" placeholder="Coloque seu nome..." />
+        <br/>
+        <input id="inputNoticia" placeholder="Escreva sua notícia..." />
+        
+        <div>
+            <button onclick="escondePostarNoticia();" class="botaoSair">Sair <i class="fa-solid fa-xmark"></i></button>
+            <button onclick="cadastraNoticia();" class="botaoSalvar">Salvar <i class="fa-solid fa-check"></i></button>
+        </div>
+
+    </div>
+
+    <div id="fundoPreto"></div>
+
+    <div class="rodape">
+
+        <div class="contato">
+            <h3> Escreva para nós </h3>
+            <p> Gostaria de ser um escritor foda do nosso blog?</p>
+            <p> 
+                Envie um e-mail agora para 
+                <br/>
+                <strong>naomandeumemailseuimbecil@gmail.com</strong>
+            </p>
+        </div>
+        <div class="escritores">
+            <h3> Escritores </h3>
+            <p>Conheça nossos escritores:</p>
+            <p id="listaEscritores"></p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
